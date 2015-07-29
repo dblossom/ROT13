@@ -1,14 +1,20 @@
 /*  */
 #include<stdio.h>
-#include <stdlib.h>
+#include<stdlib.h>
+#include<string.h>
+
+int rollover(){
+    
+}
 
 void toRot13(char *str){
 
     int len;
     len = strlen(str);
 
-    for(i = 0; i < len; i++){
+    for(int i = 0; i < (len - 1); i++){
         char c = str[i] + 13;
+        
         printf("%c", c);
     }
     printf("\n");
